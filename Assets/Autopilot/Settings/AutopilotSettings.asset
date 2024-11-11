@@ -34,9 +34,9 @@ MonoBehaviour:
   slackChannels: 
   mentionSubTeamIDs: 
   addHereInSlackMessage: 0
-  handleException: 1
-  handleError: 1
-  handleAssert: 1
+  handleException: 0
+  handleError: 0
+  handleAssert: 0
   handleWarning: 0
   ignoreMessages: []
   loggerAsset: {fileID: 11400000, guid: 24f632e5d8a824f20a6e62f483395508, type: 2}
