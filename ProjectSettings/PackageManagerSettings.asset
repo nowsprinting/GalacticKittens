@@ -34,6 +34,7 @@ MonoBehaviour:
     - com.cysharp.unitask
     - com.dena.anjin
     - com.nowsprinting.test-helper
+    - com.nowsprinting.test-helper.input
     - com.nowsprinting.test-helper.monkey
     - com.nowsprinting.test-helper.random
     m_IsDefault: 0

@@ -27,6 +27,13 @@
       },
       "url": "https://package.openupm.com"
     },
+    "com.nowsprinting.test-helper.input": {
+      "version": "1.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.nowsprinting.test-helper.monkey": {
       "version": "0.13.2",
       "depth": 1,
