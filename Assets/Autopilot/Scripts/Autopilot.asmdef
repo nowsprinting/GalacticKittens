@@ -1,0 +1,23 @@
+{
+    "name": "Autopilot",
+    "rootNamespace": "",
+    "references": [
+        "DeNA.Anjin",
+        "UniTask",
+        "GalacticKittens",
+        "TestHelper.Input",
+        "Unity.Multiplayer.Playmode",
+        "Unity.Netcode.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS || DENA_AUTOPILOT_ENABLE"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,5 +1,8 @@
 using UnityEngine;
 using Unity.Netcode;
+#if UNITY_INCLUDE_TESTS || DENA_AUTOPILOT_ENABLE
+using TestHelper.Input;
+#endif
 
 public class PlayerShipShootBullet : NetworkBehaviour
 {
@@ -20,6 +23,10 @@ public class PlayerShipShootBullet : NetworkBehaviour
 
     [SerializeField]
     AudioClip m_shootClip;
+
+#if UNITY_INCLUDE_TESTS || DENA_AUTOPILOT_ENABLE
+    public IInput Input { private get; set; } = new InputWrapper();
+#endif
 
     // Update is called once per frame
     void Update()

@@ -2,6 +2,9 @@ using Unity.Netcode;
 
 using UnityEngine;
 using System.Collections;
+#if UNITY_INCLUDE_TESTS || DENA_AUTOPILOT_ENABLE
+using TestHelper.Input;
+#endif
 
 public class MenuManager : MonoBehaviour
 {
@@ -19,6 +22,10 @@ public class MenuManager : MonoBehaviour
 
     [SerializeField]
     private SceneName nextScene = SceneName.CharacterSelection;
+
+#if UNITY_INCLUDE_TESTS || DENA_AUTOPILOT_ENABLE
+    public IInput Input { private get; set; } = new InputWrapper();
+#endif
 
     private IEnumerator Start()
     {

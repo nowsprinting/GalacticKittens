@@ -1,0 +1,93 @@
+{
+    "entryScene": "CharacterSelection",
+    "recordingType": 0,
+    "recordedAspectRatio": {
+        "x": 676.0,
+        "y": 1026.0
+    },
+    "recordedResolution": {
+        "x": 6016.0,
+        "y": 3384.0
+    },
+    "recordings": [],
+    "touchData": [
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 1.0,
+            "position": {
+                "x": 0.5296875238418579,
+                "y": 0.11874999850988388
+            },
+            "positional": false,
+            "scene": "CharacterSelection",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "Ready",
+            "objectTag": "Untagged",
+            "objectHierarchy": "CanvasCharacterSelection/LobbyContainer",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.10715819895267487,
+                "y": 0.061084918677806857
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.5,
+            "position": {
+                "x": 0.5296875238418579,
+                "y": 0.11874999850988388
+            },
+            "positional": false,
+            "scene": "CharacterSelection",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "Ready",
+            "objectTag": "Untagged",
+            "objectHierarchy": "CanvasCharacterSelection/LobbyContainer",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.10715819895267487,
+                "y": 0.061084918677806857
+            }
+        },
+        {
+            "pointerId": 0,
+            "eventType": 0,
+            "timeDelta": 0.5,
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "positional": false,
+            "scene": "Controls",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "playbackComplete",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        }
+    ]
+}

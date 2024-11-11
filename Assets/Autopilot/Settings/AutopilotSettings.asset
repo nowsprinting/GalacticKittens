@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a1731caa574ed4b9334b7d52febe27, type: 3}
+  m_Name: AutopilotSettings
+  m_EditorClassIdentifier: 
+  description: 
+  sceneAgentMaps:
+  - scenePath: Assets/Scenes/Menu.unity
+    agent: {fileID: 11400000, guid: 1b470c7e6bdc94015a72218b8f52d470, type: 2}
+  - scenePath: Assets/Scenes/CharacterSelection.unity
+    agent: {fileID: 11400000, guid: b9af091bd7abb42f3a0daf552658aed1, type: 2}
+  - scenePath: Assets/Scenes/Gameplay.unity
+    agent: {fileID: 11400000, guid: 058ab91f1d093464bbd2d84b74403208, type: 2}
+  - scenePath: Assets/Scenes/Defeat.unity
+    agent: {fileID: 11400000, guid: 275afa62b7e934fb08abaf46498da38a, type: 2}
+  - scenePath: Assets/Scenes/Victory.unity
+    agent: {fileID: 11400000, guid: 275afa62b7e934fb08abaf46498da38a, type: 2}
+  fallbackAgent: {fileID: 0}
+  observerAgent: {fileID: 0}
+  lifespanSec: 300
+  randomSeed: 
+  timeScale: 1
+  junitReportPath: 
+  slackToken: 
+  slackChannels: 
+  mentionSubTeamIDs: 
+  addHereInSlackMessage: 0
+  handleException: 1
+  handleError: 1
+  handleAssert: 1
+  handleWarning: 0
+  ignoreMessages: []
+  loggerAsset: {fileID: 11400000, guid: 24f632e5d8a824f20a6e62f483395508, type: 2}
+  reporter: {fileID: 0}
