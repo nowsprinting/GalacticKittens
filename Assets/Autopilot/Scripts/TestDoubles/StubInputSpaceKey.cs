@@ -5,7 +5,7 @@ namespace Autopilot.Scripts.TestDoubles
 {
     public class StubInputSpaceKey : InputWrapper
     {
-        private const int Interval = 20;
+        public int Interval = 20;
         private int _frameCount;
 
         public override bool GetKeyDown(KeyCode key)

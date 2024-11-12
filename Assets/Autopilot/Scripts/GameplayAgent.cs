@@ -10,6 +10,9 @@ namespace Autopilot.Scripts
     [CreateAssetMenu(fileName = "New GameplayAgent", menuName = "Anjin/GalacticKittens/Gameplay Agent", order = 41)]
     public class GameplayAgent : AbstractAgent
     {
+        [Tooltip("Shoot bullet interval frame count")]
+        public int shootBulletInterval = 20;
+
         public override async UniTask Run(CancellationToken token)
         {
             try
@@ -33,7 +36,7 @@ namespace Autopilot.Scripts
                         .FirstOrDefault(x => x.IsOwner);
                     return shoot == null;
                 }, cancellationToken: token);
-                shoot.Input = new StubInputSpaceKey();
+                shoot.Input = new StubInputSpaceKey() { Interval = this.shootBulletInterval };
                 Logger.Log($"Inject StubInputSpaceKey to {shoot.gameObject.name}");
 
                 // not wait
