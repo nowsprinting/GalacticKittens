@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.dena.anjin": "1.7.0",
+    "com.dena.anjin": "1.8.0",
     "com.nowsprinting.test-helper.input": "1.0.1",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.ai.navigation": "2.0.4",
