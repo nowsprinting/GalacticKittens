@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: AutopilotSettings
   m_EditorClassIdentifier: 
   description: 
+  name: 
   sceneAgentMaps:
   - scenePath: Assets/Scenes/Menu.unity
     agent: {fileID: 11400000, guid: 1b470c7e6bdc94015a72218b8f52d470, type: 2}
@@ -26,9 +27,16 @@ MonoBehaviour:
     agent: {fileID: 11400000, guid: 275afa62b7e934fb08abaf46498da38a, type: 2}
   fallbackAgent: {fileID: 0}
   observerAgent: {fileID: 0}
+  sceneCrossingAgents: []
   lifespanSec: 300
+  exitCode: 0
+  customExitCode: 
+  exitMessage: Autopilot lifespan expired.
   randomSeed: 
   timeScale: 1
+  outputRootPath: Logs
+  screenshotsPath: Screenshots
+  cleanScreenshots: 1
   junitReportPath: 
   slackToken: 
   slackChannels: 
@@ -39,5 +47,9 @@ MonoBehaviour:
   handleAssert: 0
   handleWarning: 0
   ignoreMessages: []
-  loggerAsset: {fileID: 11400000, guid: 24f632e5d8a824f20a6e62f483395508, type: 2}
+  loggerAsset: {fileID: 0}
+  loggerAssets:
+  - {fileID: 11400000, guid: 174941b61068a42009193c73437a7525, type: 2}
+  - {fileID: 11400000, guid: 24f632e5d8a824f20a6e62f483395508, type: 2}
   reporter: {fileID: 0}
+  reporters: []
