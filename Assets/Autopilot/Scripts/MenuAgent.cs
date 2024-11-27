@@ -22,6 +22,9 @@ namespace Autopilot.Scripts
         [Tooltip("Use it if not specified by MPPM tags")]
         public Mode defaultMode;
 
+        [Tooltip("Delay millis before click Buttons")]
+        public int delayMillis;
+
         public override async UniTask Run(CancellationToken token)
         {
             try
@@ -31,9 +34,11 @@ namespace Autopilot.Scripts
                 var menuContainer = GameObject.Find("MenuContainer");
                 if (menuContainer == null)
                 {
+                    await UniTask.Delay(delayMillis, ignoreTimeScale: true, cancellationToken: token);
                     await HitAnyKey(token);
                 }
 
+                await UniTask.Delay(delayMillis, ignoreTimeScale: true, cancellationToken: token);
                 await SelectMode(token);
             }
             finally

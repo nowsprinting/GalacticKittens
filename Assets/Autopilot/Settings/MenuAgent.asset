@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 
   defaultMode: 0
+  delayMillis: 2000

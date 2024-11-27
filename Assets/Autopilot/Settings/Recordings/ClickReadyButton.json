@@ -14,7 +14,7 @@
         {
             "pointerId": -1,
             "eventType": 1,
-            "timeDelta": 1.0,
+            "timeDelta": 2.0,
             "position": {
                 "x": 0.5296875238418579,
                 "y": 0.11874999850988388
