@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7a1731caa574ed4b9334b7d52febe27, type: 3}
-  m_Name: AutopilotSettings
+  m_Name: AutopilotSettingsJoin
   m_EditorClassIdentifier: 
-  description: for Host mode or VP with tag
+  description: for Join mode on Player build
   name: 
   sceneAgentMaps:
   - scenePath: Assets/Scenes/Menu.unity
-    agent: {fileID: 11400000, guid: 1b470c7e6bdc94015a72218b8f52d470, type: 2}
+    agent: {fileID: 11400000, guid: 88f85a76152c046aa80293e2d2cb322c, type: 2}
   - scenePath: Assets/Scenes/CharacterSelection.unity
     agent: {fileID: 11400000, guid: b9af091bd7abb42f3a0daf552658aed1, type: 2}
   - scenePath: Assets/Scenes/Gameplay.unity

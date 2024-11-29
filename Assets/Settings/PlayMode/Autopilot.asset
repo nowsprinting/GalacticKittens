@@ -16,21 +16,25 @@ MonoBehaviour:
   m_EnableEditors: 1
   m_MainEditorInstance:
     Name: Main Editor
-    <CorrespondingNodeId>k__BackingField: 
-    m_Nodes: []
-    m_PlayerTag: host
+    <CorrespondingNodeId>k__BackingField: Main Editor|0_run
+    m_Nodes:
+    - Main Editor|0_run
+    - Main Editor|0_deploy
+    m_PlayerTag: 
     m_InitialScene: {fileID: 102900000, guid: 88e9c3b76d8ed0bcdb2a6be062b6f929, type: 3}
   m_EditorInstances: []
   m_LocalInstances:
   - Name: Instance 1
-    <CorrespondingNodeId>k__BackingField: 
-    m_Nodes: []
+    <CorrespondingNodeId>k__BackingField: Instance 1 - Run
+    m_Nodes:
+    - Instance 1 - Build
+    - Instance 1 - Run
     m_BuildProfile: {fileID: 11400000, guid: fe667b7931a584cf7bc3d4adfcd81c2c, type: 2}
     advancedConfiguration:
       m_StreamLogsToMainEditor: 0
       m_LogsColor: {r: 0.3643, g: 0.581, b: 0.8679, a: 1}
       m_Arguments: -screen-fullscreen 0 -screen-width 640 -screen-height 480 -LAUNCH_AUTOPILOT_SETTINGS
-        AutopilotSettings
+        AutopilotSettingsJoin
   m_RemoteInstances: []
   m_OverridePort: 0
   m_Port: 0
