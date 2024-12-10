@@ -7,8 +7,8 @@ This fork is a modified version of the [GalacticKittens](https://github.com/Unit
 ## Diff with upstream
 
 - Upgrade Unity to 6000.0.23f1
-- Install [Multiplayer Play Mode](https://docs.unity3d.com/Packages/com.unity.multiplayer.playmode@latest) (MPPM) package v1.3.1
-- Install [Anjin](https://github.com/DeNA/Anjin) package v1.7.0
+- Install [Multiplayer Play Mode](https://docs.unity3d.com/Packages/com.unity.multiplayer.playmode@latest) (MPPM) package v1.3.2
+- Install [Anjin](https://github.com/DeNA/Anjin) package v1.8.1
 - Install [Input Test Helper](https://github.com/nowsprinting/test-helper.input) package v1.0.1
 - Input Manager can be DI enabled
   - Assets/Scripts/Managers/MenuManager.cs
