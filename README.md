@@ -54,5 +54,5 @@ Click "MENU" button.
 
 ## How to run autoplay
 
-1. Open Assets/Autopilot/Settings/AutopilotSettings by inspector window.
+1. Open Assets/Autopilot/Resources/Host/AutopilotSettings by inspector window.
 2. Click "Run" button.
