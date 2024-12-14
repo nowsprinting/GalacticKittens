@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using DeNA.Anjin;
 using DeNA.Anjin.Settings;
 using NUnit.Framework;
@@ -26,14 +27,16 @@ namespace Autopilot.Tests
     {
         private Process _externalPlayer;
 
-        private static Process LaunchExternalPlayer(string settingsPath, string logsPath)
+        private static async UniTask<Process> LaunchExternalPlayer(string settingsPath, string logsPath)
         {
-            return Process.Start(
+            var process = Process.Start(
                 "Builds/Galactic Kittens.app/Contents/MacOS/Galactic Kittens",
                 "-screen-width 320 -screen-height 180 " +
                 $"-LAUNCH_AUTOPILOT_SETTINGS {settingsPath} " +
                 $"-OUTPUT_ROOT_DIRECTORY_PATH {Path.GetFullPath(logsPath)}"
             );
+            await UniTask.Delay(5000);
+            return process;
         }
 
         private static AutopilotSettings LoadAutopilotSettings(string path)
@@ -60,7 +63,7 @@ namespace Autopilot.Tests
         [TearDown]
         public void TearDown()
         {
-            if (_externalPlayer == null)
+            if (_externalPlayer == null || _externalPlayer.HasExited)
             {
                 return;
             }
@@ -76,7 +79,7 @@ namespace Autopilot.Tests
         {
             var logsPath = Path.Combine("Logs", TestContext.CurrentContext.Test.Name);
 
-            _externalPlayer = LaunchExternalPlayer("Join/AutopilotSettings", Path.Combine(logsPath, "Join"));
+            _externalPlayer = await LaunchExternalPlayer("Join/AutopilotSettings", Path.Combine(logsPath, "Join"));
             Assume.That(_externalPlayer, Is.Not.Null);
             Assume.That(_externalPlayer.HasExited, Is.False);
 
@@ -91,7 +94,7 @@ namespace Autopilot.Tests
         {
             var logsPath = Path.Combine("Logs", TestContext.CurrentContext.Test.Name);
 
-            _externalPlayer = LaunchExternalPlayer("Host/AutopilotSettings", Path.Combine(logsPath, "Host"));
+            _externalPlayer = await LaunchExternalPlayer("Host/AutopilotSettings", Path.Combine(logsPath, "Host"));
             Assume.That(_externalPlayer, Is.Not.Null);
             Assume.That(_externalPlayer.HasExited, Is.False);
 

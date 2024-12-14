@@ -7,6 +7,10 @@ using UnityEngine;
 
 namespace Autopilot
 {
+    /// <summary>
+    /// Agent for Gameplay scene.
+    /// Using stub input w, s, and space key.
+    /// </summary>
     [CreateAssetMenu(fileName = "New GameplayAgent", menuName = "Anjin/GalacticKittens/Gameplay Agent", order = 41)]
     public class GameplayAgent : AbstractAgent
     {
