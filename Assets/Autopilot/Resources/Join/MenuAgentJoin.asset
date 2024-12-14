@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: MenuAgentJoin
   m_EditorClassIdentifier: 
   description: 
+  respectMppmTags: 0
   defaultMode: 1
   delayMillis: 2000

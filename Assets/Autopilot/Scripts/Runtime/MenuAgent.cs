@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using System.Threading;
 using Autopilot.TestDoubles;
@@ -25,6 +24,9 @@ namespace Autopilot
     [CreateAssetMenu(fileName = "New MenuAgent", menuName = "Anjin/GalacticKittens/Menu Agent", order = 40)]
     public class MenuAgent : AbstractAgent
     {
+        [Tooltip("Mode (Host or Join) is respected MPPM tags")]
+        public bool respectMppmTags = true;
+
         [Tooltip("Use it if not specified by MPPM tags")]
         public Mode defaultMode;
 
@@ -65,28 +67,18 @@ namespace Autopilot
 
         private async UniTask SelectMode(CancellationToken token)
         {
-            string buttonName;
-            string[] tags;
-            if (Application.isEditor && !Application.isBatchMode)
+            var buttonName = this.defaultMode.ToString();
+            if (respectMppmTags)
             {
-                tags = CurrentPlayer.ReadOnlyTags();
-            }
-            else
-            {
-                tags = Array.Empty<string>();
-            }
-
-            if (tags.Contains("host"))
-            {
-                buttonName = "Host";
-            }
-            else if (tags.Contains("join"))
-            {
-                buttonName = "Join";
-            }
-            else
-            {
-                buttonName = this.defaultMode.ToString();
+                var tags = CurrentPlayer.ReadOnlyTags();
+                if (tags.Contains("host"))
+                {
+                    buttonName = "Host";
+                }
+                else if (tags.Contains("join"))
+                {
+                    buttonName = "Join";
+                }
             }
 
             GameObject button = null;
