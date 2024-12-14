@@ -1,11 +1,11 @@
 using System.Linq;
 using System.Threading;
-using Autopilot.Scripts.TestDoubles;
+using Autopilot.TestDoubles;
 using Cysharp.Threading.Tasks;
 using DeNA.Anjin.Agents;
 using UnityEngine;
 
-namespace Autopilot.Scripts
+namespace Autopilot
 {
     [CreateAssetMenu(fileName = "New GameplayAgent", menuName = "Anjin/GalacticKittens/Gameplay Agent", order = 41)]
     public class GameplayAgent : AbstractAgent

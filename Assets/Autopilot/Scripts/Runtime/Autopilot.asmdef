@@ -2,12 +2,12 @@
     "name": "Autopilot",
     "rootNamespace": "",
     "references": [
-        "DeNA.Anjin",
+        "Unity.Multiplayer.Playmode",
+        "Unity.Netcode.Runtime",
         "UniTask",
         "GalacticKittens",
-        "TestHelper.Input",
-        "Unity.Multiplayer.Playmode",
-        "Unity.Netcode.Runtime"
+        "DeNA.Anjin",
+        "TestHelper.Input"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

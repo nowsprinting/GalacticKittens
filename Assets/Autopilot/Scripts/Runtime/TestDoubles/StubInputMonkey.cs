@@ -1,7 +1,7 @@
 using DeNA.Anjin.Utilities;
 using TestHelper.Input;
 
-namespace Autopilot.Scripts.TestDoubles
+namespace Autopilot.TestDoubles
 {
     public class StubInputMonkey : InputWrapper
     {

@@ -1,7 +1,7 @@
 using TestHelper.Input;
 using UnityEngine;
 
-namespace Autopilot.Scripts.TestDoubles
+namespace Autopilot.TestDoubles
 {
     public class StubInputSpaceKey : InputWrapper
     {
