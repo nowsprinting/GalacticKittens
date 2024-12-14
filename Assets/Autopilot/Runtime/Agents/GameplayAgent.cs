@@ -1,11 +1,11 @@
 using System.Linq;
 using System.Threading;
-using Autopilot.TestDoubles;
+using Autopilot.Agents.TestDoubles;
 using Cysharp.Threading.Tasks;
 using DeNA.Anjin.Agents;
 using UnityEngine;
 
-namespace Autopilot
+namespace Autopilot.Agents
 {
     /// <summary>
     /// Agent for Gameplay scene.

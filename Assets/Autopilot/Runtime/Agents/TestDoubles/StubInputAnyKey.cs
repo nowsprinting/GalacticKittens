@@ -1,6 +1,6 @@
 using TestHelper.Input;
 
-namespace Autopilot.TestDoubles
+namespace Autopilot.Agents.TestDoubles
 {
     public class StubInputAnyKey : InputWrapper
     {

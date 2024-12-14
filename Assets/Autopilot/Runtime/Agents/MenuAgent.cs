@@ -1,6 +1,6 @@
 using System.Linq;
 using System.Threading;
-using Autopilot.TestDoubles;
+using Autopilot.Agents.TestDoubles;
 using Cysharp.Threading.Tasks;
 using DeNA.Anjin.Agents;
 using Unity.Multiplayer.Playmode;
@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.UI;
 
-namespace Autopilot
+namespace Autopilot.Agents
 {
     public enum Mode
     {
