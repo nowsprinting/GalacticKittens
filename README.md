@@ -54,5 +54,22 @@ Click "MENU" button.
 
 ## How to run autoplay
 
-1. Open Assets/Autopilot/Resources/Host/AutopilotSettings by inspector window.
-2. Click "Run" button.
+### Run in editor window with Multiplayer Play Mode (MPPM) package
+
+1. Open **Multiplayer Play Mode** window  (**Window > Multiplayer > Multiplayer Play Mode**), enable virtual players and add tag "host" or "join" each virtual player.
+2. Open Assets/Autopilot/Resources/Host/AutopilotSettings by inspector window.
+3. Click "Run" button.
+
+
+### Run in editor window with Play Mode tests
+
+1. Build app to "Builds/Galactic Kittens.app"
+2. Open **Test Runner window** (**Window > General > Test Runner**), click "Play Mode" tab.
+3. Click "Run All" button.
+
+
+### Run on command line with Play Mode tests
+
+```bash
+make autopilot_tests
+```
