@@ -8,7 +8,7 @@
       "url": "https://package.openupm.com"
     },
     "com.dena.anjin": {
-      "version": "1.8.1",
+      "version": "1.8.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
