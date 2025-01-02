@@ -3,6 +3,7 @@ using System.Threading;
 using Autopilot.Agents.TestDoubles;
 using Cysharp.Threading.Tasks;
 using DeNA.Anjin.Agents;
+using TestHelper.Input;
 using UnityEngine;
 
 namespace Autopilot.Agents
@@ -19,11 +20,13 @@ namespace Autopilot.Agents
 
         public override async UniTask Run(CancellationToken token)
         {
+            PlayerShipMovement movement = null;
+            PlayerShipShootBullet shoot = null;
+
             try
             {
                 Logger.Log($"Enter {this.name}.Run()");
 
-                PlayerShipMovement movement = null;
                 await UniTask.WaitWhile(() =>
                 {
                     movement = FindObjectsByType<PlayerShipMovement>(FindObjectsSortMode.None)
@@ -33,7 +36,6 @@ namespace Autopilot.Agents
                 movement.Input = new StubInputMonkey(Random);
                 Logger.Log($"Inject StubInputMonkey to {movement.gameObject.name}");
 
-                PlayerShipShootBullet shoot = null;
                 await UniTask.WaitWhile(() =>
                 {
                     shoot = FindObjectsByType<PlayerShipShootBullet>(FindObjectsSortMode.None)
@@ -43,10 +45,20 @@ namespace Autopilot.Agents
                 shoot.Input = new StubInputSpaceKey() { Interval = this.shootBulletInterval };
                 Logger.Log($"Inject StubInputSpaceKey to {shoot.gameObject.name}");
 
-                // not wait
+                await UniTask.WaitWhile(() => true, cancellationToken: token);
             }
             finally
             {
+                if (movement != null)
+                {
+                    movement.Input = new InputWrapper();
+                }
+
+                if (shoot != null)
+                {
+                    shoot.Input = new InputWrapper();
+                }
+
                 Logger.Log($"Exit {this.name}.Run()");
             }
         }
