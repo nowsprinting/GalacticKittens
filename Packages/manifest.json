@@ -48,16 +48,26 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0"
+    "com.unity.modules.xr": "1.0.0",
+    "org.nuget.system.io.pipelines": "9.0.5",
+    "org.nuget.system.threading.channels": "9.0.5"
   },
   "scopedRegistries": [
     {
       "name": "package.openupm.com",
       "url": "https://package.openupm.com",
       "scopes": [
-        "com.dena",
         "com.cysharp",
-        "com.nowsprinting"
+        "com.dena",
+        "com.nowsprinting",
+        "org.nuget.microsoft.bcl.asyncinterfaces",
+        "org.nuget.system.buffers",
+        "org.nuget.system.io.pipelines",
+        "org.nuget.system.memory",
+        "org.nuget.system.numerics.vectors",
+        "org.nuget.system.runtime.compilerservices.unsafe",
+        "org.nuget.system.threading.channels",
+        "org.nuget.system.threading.tasks.extensions"
       ],
       "overrideBuiltIns": false
     }
