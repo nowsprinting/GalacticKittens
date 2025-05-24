@@ -52,4 +52,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 174941b61068a42009193c73437a7525, type: 2}
   - {fileID: 11400000, guid: 24f632e5d8a824f20a6e62f483395508, type: 2}
   reporter: {fileID: 0}
-  reporters: []
+  reporters:
+  - {fileID: 11400000, guid: 41945c96cb65840779321d85ff0c8e54, type: 2}
