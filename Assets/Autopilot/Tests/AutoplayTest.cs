@@ -52,11 +52,12 @@ namespace Autopilot.Tests
         [SetUp]
         public async Task SetUp()
         {
+#if UNITY_EDITOR
             if (Application.isBatchMode)
             {
                 PlayModeWindow.SetCustomRenderingResolution(320, 180, "QVGAW");
             }
-
+#endif
             await SceneManager.LoadSceneAsync("Bootstrap");
         }
 
