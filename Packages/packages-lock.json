@@ -8,18 +8,18 @@
       "url": "https://package.openupm.com"
     },
     "com.dena.anjin": {
-      "version": "1.8.2",
+      "version": "1.9.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.cysharp.unitask": "2.3.3",
-        "com.nowsprinting.test-helper.monkey": "0.13.2",
+        "com.nowsprinting.test-helper.monkey": "0.15.1",
         "com.unity.automated-testing": "0.8.1-preview.2"
       },
       "url": "https://package.openupm.com"
     },
     "com.nowsprinting.test-helper": {
-      "version": "0.7.1",
+      "version": "1.1.1",
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -35,19 +35,19 @@
       "url": "https://package.openupm.com"
     },
     "com.nowsprinting.test-helper.monkey": {
-      "version": "0.13.2",
+      "version": "0.15.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.cysharp.unitask": "2.3.3",
-        "com.nowsprinting.test-helper": "0.7.1",
-        "com.nowsprinting.test-helper.random": "0.3.0",
+        "com.nowsprinting.test-helper": "1.1.1",
+        "com.nowsprinting.test-helper.random": "0.3.1",
         "com.unity.ugui": "1.0.0"
       },
       "url": "https://package.openupm.com"
     },
     "com.nowsprinting.test-helper.random": {
-      "version": "0.3.0",
+      "version": "0.3.1",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
