@@ -304,7 +304,14 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "d1ef610e9fe3ad0b490cce91594449fc0af809a6"
+      "hash": "610157ad762084380380148ba8ce14e266a6da97"
+    },
+    "jp.co.cyberagent.instant-replay": {
+      "version": "https://github.com/CyberAgentGameEntertainment/InstantReplay.git?path=Packages/jp.co.cyberagent.instant-replay",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b5ec3e8d33474cc0d61bdc6caa6a628034063559"
     },
     "org.nuget.microsoft.bcl.asyncinterfaces": {
       "version": "9.0.5",
