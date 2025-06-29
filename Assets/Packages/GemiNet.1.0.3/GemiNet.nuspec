@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>GemiNet</id>
+    <version>1.0.3</version>
+    <authors>nuskey</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/nuskey8/GemiNet</projectUrl>
+    <description>Unofficial Gemini Developer API client for .NET and Unity</description>
+    <copyright>© Yusuke Nakada</copyright>
+    <tags>ai gemini</tags>
+    <repository type="git" url="https://github.com/nuskey8/GemiNet" commit="5a78e709c0012445540d7b1fb4e3781db1df97e7" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="System.Net.Http.Json" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="8.0.5" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0" />
+      <group targetFramework="net9.0" />
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="System.Net.Http.Json" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="8.0.5" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
