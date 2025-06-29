@@ -18,6 +18,13 @@
       },
       "url": "https://package.openupm.com"
     },
+    "com.github-glitchenzo.nugetforunity": {
+      "version": "4.4.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.nowsprinting.test-helper": {
       "version": "1.1.1",
       "depth": 2,
