@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a1731caa574ed4b9334b7d52febe27, type: 3}
+  m_Name: AutopilotSettings
+  m_EditorClassIdentifier: 
+  description: Visual Verification Agent demo
+  name: 
+  sceneAgentMaps:
+  - scenePath: Assets/Scenes/Menu.unity
+    agent: {fileID: 11400000, guid: 1b470c7e6bdc94015a72218b8f52d470, type: 2}
+  - scenePath: Assets/Scenes/CharacterSelection.unity
+    agent: {fileID: 11400000, guid: b9af091bd7abb42f3a0daf552658aed1, type: 2}
+  - scenePath: Assets/Scenes/Gameplay.unity
+    agent: {fileID: 11400000, guid: 3a0125a9722cb4e759f47efb9596c654, type: 2}
+  - scenePath: Assets/Scenes/Defeat.unity
+    agent: {fileID: 11400000, guid: dae098124990d43958048776e0674719, type: 2}
+  - scenePath: Assets/Scenes/Victory.unity
+    agent: {fileID: 11400000, guid: dae098124990d43958048776e0674719, type: 2}
+  fallbackAgent: {fileID: 0}
+  observerAgent: {fileID: 0}
+  sceneCrossingAgents: []
+  lifespanSec: 300
+  exitCode: 0
+  customExitCode: 
+  exitMessage: Autopilot lifespan expired.
+  randomSeed: 
+  timeScale: 1
+  outputRootPath: Logs
+  screenshotsPath: Screenshots
+  cleanScreenshots: 1
+  junitReportPath: 
+  slackToken: 
+  slackChannels: 
+  mentionSubTeamIDs: 
+  addHereInSlackMessage: 0
+  handleException: 0
+  handleError: 0
+  handleAssert: 0
+  handleWarning: 0
+  ignoreMessages: []
+  loggerAsset: {fileID: 0}
+  loggerAssets:
+  - {fileID: 11400000, guid: 174941b61068a42009193c73437a7525, type: 2}
+  - {fileID: 11400000, guid: 24f632e5d8a824f20a6e62f483395508, type: 2}
+  reporter: {fileID: 0}
+  reporters: []

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df39ff61b25e4443b9b0ecc0388fa6cb, type: 3}
+  m_Name: ResultVerificationAgent
+  m_EditorClassIdentifier: 
+  description: "\u52DD\u5229\u753B\u9762\u304C\u8868\u793A\u3055\u308C\u3066\u3044\u308B\u3053\u3068\u3092\u691C\u8A3C\uFF08\u5B9F\u969B\u306FVictory\u3068Defeat\u3067scene\u304C\u5225\u308C\u3066\u3044\u308B\u304C\uFF09"
+  delay: 2
+  prompt: "VICTORY!\u3068\u8868\u793A\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+  threshold: 0.8
