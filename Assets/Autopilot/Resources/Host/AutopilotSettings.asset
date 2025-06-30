@@ -20,11 +20,11 @@ MonoBehaviour:
   - scenePath: Assets/Scenes/CharacterSelection.unity
     agent: {fileID: 11400000, guid: b9af091bd7abb42f3a0daf552658aed1, type: 2}
   - scenePath: Assets/Scenes/Gameplay.unity
-    agent: {fileID: 11400000, guid: bfb0a4396b63a43499ac5ba6e2c8a506, type: 2}
+    agent: {fileID: 11400000, guid: 0e4a1411e75f543a0a15cbd39425673e, type: 2}
   - scenePath: Assets/Scenes/Defeat.unity
-    agent: {fileID: 11400000, guid: 275afa62b7e934fb08abaf46498da38a, type: 2}
+    agent: {fileID: 11400000, guid: 65bc4db4e798d4ad5bd3a70ee721a5ba, type: 2}
   - scenePath: Assets/Scenes/Victory.unity
-    agent: {fileID: 11400000, guid: 275afa62b7e934fb08abaf46498da38a, type: 2}
+    agent: {fileID: 11400000, guid: 65bc4db4e798d4ad5bd3a70ee721a5ba, type: 2}
   fallbackAgent: {fileID: 0}
   observerAgent: {fileID: 0}
   sceneCrossingAgents: []

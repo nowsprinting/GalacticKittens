@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a917b9aed3a4721a7d242ad6094efbf, type: 3}
-  m_Name: InGameAgent
+  m_Script: {fileID: 11500000, guid: df39ff61b25e4443b9b0ecc0388fa6cb, type: 3}
+  m_Name: JudgeInGameAgent
   m_EditorClassIdentifier: 
   description: 
-  agents:
-  - {fileID: 11400000, guid: 0e4a1411e75f543a0a15cbd39425673e, type: 2}
-  - {fileID: 11400000, guid: 058ab91f1d093464bbd2d84b74403208, type: 2}
+  delay: 2
+  prompt: "\u53F3\u5411\u304D\u306E\u8D64\u3044\u6226\u95D8\u6A5F\u3068\u9752\u3044\u6226\u95D8\u6A5F\u304C\u8868\u793A\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+  threshold: 0.8

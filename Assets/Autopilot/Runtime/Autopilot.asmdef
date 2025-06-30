@@ -14,7 +14,8 @@
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "GemiNet.dll"
+      "GemiNet.dll",
+      "System.Text.Json.dll"
     ],
     "autoReferenced": false,
     "defineConstraints": [

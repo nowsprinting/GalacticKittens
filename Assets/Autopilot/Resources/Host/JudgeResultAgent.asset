@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df39ff61b25e4443b9b0ecc0388fa6cb, type: 3}
-  m_Name: JudgeByGeminiAgent
+  m_Name: JudgeResultAgent
   m_EditorClassIdentifier: 
   description: 
-  prompt: "\u53F3\u5411\u304D\u306E\u8D64\u3044\u6226\u95D8\u6A5F\u304C\u8868\u793A\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+  delay: 2
+  prompt: "VICTORY!\u3068\u8868\u793A\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
   threshold: 0.8
-  delay: 5
